@@ -1,0 +1,69 @@
+@import "../../styles/variables";
+
+.Footer{
+    padding-top:10vw;
+    min-height: 400px;
+    background: url("../../public/assets/img/footer_pattern.svg") bottom center no-repeat;
+    text-align: center;
+    padding-right: 6rem;
+    @media screen and (max-width: 821px){  
+        padding-right: 3rem;
+        h2 img{
+            height: 40px;
+        }
+    }
+    
+}
+.Subtitle{
+    font-family: $font-family;
+    font-size: 46px;
+    font-weight: 800;
+}
+.Text{
+    font-family: $font-family;
+    font-size: 30px;
+    font-weight: 500;
+    max-width: 700px;  
+    margin: 0 auto 2rem;
+}
+
+.Thanks{
+    font-size: 3.5vw;
+    font-family: $font-family;
+    text-align: right;
+    font-weight: 600;
+    margin-top: 10vw;
+    margin-bottom: 5vw;
+}
+@media screen and (max-width: 1181px){
+    .ContactInfo h2 {
+        display: flex;
+        justify-content: center;
+        img{
+            display: block;
+            width: 56vw;
+            text-emphasis: none;
+        }
+    }
+
+}
+.ScrollTop{
+    background-color: $primary;
+    display: block;
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    font-weight: 500;
+    padding-top: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    
+}
+.ScrollTop.visible{
+        opacity: 1;
+        transform: translateY(0);
+}

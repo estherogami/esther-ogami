@@ -1,0 +1,20 @@
+.WorksList{
+    display: flex;
+    margin-left: 0;
+    padding-left: 0;
+    flex-direction: column;
+    height: 1900px;
+    flex-wrap: wrap;
+    @media screen and (max-width: 1181px){
+        height: 2300px;
+     } 
+     @media screen and (max-width: 821px){
+        height: auto;
+     }
+}
+
+@media screen and (max-width: 821px){
+        .Works h2 img{
+            width: 50vw;
+        }
+}

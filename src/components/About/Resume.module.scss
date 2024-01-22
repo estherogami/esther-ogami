@@ -1,0 +1,20 @@
+.resume{
+    margin-bottom: 3vw;
+    padding: 0;
+    margin-left: 0;
+    li{
+        list-style-type: none;
+        font-size: calc(12px + .4vw);
+        display: flex;
+        font-weight: 500;
+        padding: .7rem .7rem .7rem 0;
+        @media screen and (max-width: 821px){  
+            font-size:calc(12px + 1.5vw);
+        }
+        span{
+            display: inline-block;
+            padding: 0 2.2rem 0rem 0rem;
+            height: 100%;
+        }
+    }
+}

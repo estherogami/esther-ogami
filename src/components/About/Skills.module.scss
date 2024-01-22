@@ -1,0 +1,108 @@
+@import "../../styles/variables";
+.TextBox1{
+    width: 100%;
+}
+
+.Title{
+    margin-top: 3vw;
+    @media screen and (max-width: 821px){  
+        width: 40vw;
+        height: 40px;
+    }
+}
+.SkillsContainer{
+    display: flex;
+    gap: 30px;
+    @media screen and (max-width: 1181px){
+        display: block;
+        .TextBox1, .TextBox2{
+            width: 100%;
+        }
+    }
+    
+}
+.TextBox1, .TextBox2{
+    background-color: white;
+    border-radius: 66px;
+    border: 4px solid $text-color;
+    padding: 2vw 3vw;
+    margin-bottom: 2vw;
+    font-size:calc(12px + .5vw);
+    font-weight: 500;
+    @media screen and (max-width: 821px){  
+        border-radius: 33px;
+        font-size:calc(12px + 2vw);
+        margin-bottom: 1rem;
+    }
+    h4{
+        display: block;
+        background-position: center bottom;
+        background: url(../../public/assets/img/dot_hor.svg) repeat-x;
+        background-size: 182px 3px;
+        background-position: bottom;
+        margin: 0;
+        font-size: 2.2rem;
+        padding-bottom: 1rem;
+        margin-bottom: .7rem;
+        @media screen and (max-width: 821px){  
+            font-size:calc(12px + 4vw);
+        }
+    }
+    ul{
+        margin-left: 0;
+        padding-left: 0;
+        font-size: 1rem;
+        li{
+            list-style-type: none;
+            span{
+                font-size: 1.8rem;
+                display: inline-block;
+                position: relative;
+                top: 8px;
+            }
+        }
+    }
+    .Tools{
+        margin-top: 2vw;
+        h5{
+            display: block;
+            background-position: center bottom;
+            background: url(../../public/assets/img/dot_hor.svg) repeat-x;
+            background-size: 182px 3px;
+            background-position: bottom;
+            margin: 0;
+            font-size: 1.8rem;
+            padding-bottom: 1vw;
+            margin-bottom: .7vw;
+            text-align: center;
+        }
+        background-color: #F3F3F3;
+        border-radius: 50px;
+        padding: 1vw 1.5vw 1vw; 
+    }
+}
+.TextBox2{
+    width: 45%;
+    h4{
+        font-size: 1.8rem;
+        @media screen and (max-width: 821px){  
+            font-size:calc(12px + 4vw);
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        li{
+            line-height: 5vh;
+            span{
+                font-size: 7vw;
+                @media screen and (max-width: 821px){  
+                    font-size:calc(12px + 20vw);
+                }
+            }
+        }
+    }
+}
+

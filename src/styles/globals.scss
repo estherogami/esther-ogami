@@ -1,0 +1,91 @@
+@import "variables";
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap');
+@font-face {
+  font-family: 'ab-countryroadregular';
+  src: url('../public/assets/fonts/46325-webfont.woff2') format('woff2'),
+       url('../public/assets/fonts/46325-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+//General
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: $text-color;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container{
+  padding-left: 300px;
+  @media screen and (max-width: 821px){
+    padding-left: 5vw;
+  }
+}
+
+.d-flex{
+  display: flex;
+}
+
+.w-100{
+  width: 100%;
+}
+.h-100{
+  height: 100vh;;
+}
+.align-center{
+  align-content: center;
+}
+.wrap{
+  flex-wrap: wrap;
+}
+.relative{
+  position: relative;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+.preloader{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 9999999;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  animation: fade-out 0.5s linear;
+  animation-delay: .3s;
+  animation-fill-mode: forwards;
+}
+.DefaultState{
+  opacity: 0;
+  transform: translateY(20px); 
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.FadeIn{
+  opacity: 1;
+  transform: translateY(0);
+}

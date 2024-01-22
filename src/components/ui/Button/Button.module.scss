@@ -1,0 +1,21 @@
+@import "../../../styles/variables";
+
+.Button{
+    background: #FFEB34;
+    border: 3px solid $text-color;
+    border-radius: 24px;
+    font-family: $font-family;
+    font-weight: 800;
+    font-size: 31px;
+    display: block;
+    width: 350px;
+    max-width: 100%;
+    text-align: center;
+    padding: 3px 5px 5px;
+    margin: 0 auto;
+    transition: all 0.3s linear;
+    pointer-events: auto;
+    &:hover{
+        background: darken(#FFEB34, 13%);
+    }
+}

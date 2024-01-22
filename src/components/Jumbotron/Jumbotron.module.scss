@@ -1,0 +1,33 @@
+.Jumbotron{
+    padding-top: 15vh;
+    height: 85vh;
+    min-height: 500px;
+    background: url(../../public/assets/img/jumbo.svg) no-repeat;
+    background-size: contain;
+    h1{
+        font-size: 2.5vw;
+        font-weight: 500;
+        
+    }
+    @media screen and (max-width: 1181px){
+        height: 630px;
+        background-size: 120vw;
+        background-position: -20vw 0;
+    }
+    @media screen and (max-width: 821px){
+            padding-top: 100vw;
+            background: url(../../public/assets/img/jumbo-mobile.svg) no-repeat;
+            background-size: 105%;
+            background-position: 0 100%;
+            //background-position: 20px 20px;
+            img{
+                width: 60vw;
+                height: 50px;
+                margin-left: -10px
+            }
+            h1{
+                font-size: 5vw
+            }
+        }
+    
+}

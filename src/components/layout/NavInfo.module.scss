@@ -1,0 +1,24 @@
+.NavInfo{
+    writing-mode: vertical-rl;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 23vh;
+    a{
+        display: inline-block;
+        margin: 5px 5px;
+    }
+    &:after{
+        display: block;
+        content: "";
+        width: 3px;
+        border-radius: 50px;
+        height: 23vh;
+        position:absolute;
+        background-color: #3B392E;
+        bottom: 0;
+        right: 1.1rem;
+    }
+}

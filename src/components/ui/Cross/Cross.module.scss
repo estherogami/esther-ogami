@@ -1,0 +1,24 @@
+.Cross{
+    position:fixed;
+    right: 30px;
+    top: 20px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    font-size: 80px;
+    background-image: url(../../../public/assets/img/cross.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 9999999;
+    @media screen and (max-width: 821px){
+        width: 50px;
+        height: 50px;
+        right: 20px;
+    }
+    a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
