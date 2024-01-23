@@ -1,11 +1,15 @@
 import { IProject } from "../models/project/types";
-export const BASE_API_URL = process.env.NEXT_PUBLIC_BASE_API_URL;
+export const BASE_API_URL = process.env.NEXT_PUBLIC_VERCEL_URL;
+
 
 //Default data fetch response function
 async function getData(request: string){
     try {
       const res = await fetch(request, {
         cache: "no-store",
+        next: {
+          revalidate: 0
+        }
       });
   
       if (!res.ok) {
