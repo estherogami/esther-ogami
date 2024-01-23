@@ -1,4 +1,5 @@
 import { IProject } from "../models/project/types";
+const BASE_API_URL = process.env.NEXT_PUBLIC_BASE_API_URL;
 
 //Default data fetch response function
 async function getData(request: string){
@@ -19,13 +20,13 @@ async function getData(request: string){
 
 //Get all Projects
 export const getAllProjects = async () => {
-      return getData(process.env.NEXT_PUBLIC_API_URL+"api/projects");
+      return getData(`${BASE_API_URL}/api/projects`);
   };
   
 
 //Get project by id
 export async function getProjectBySlug(slug: string){
-    const { projects } = await getData(process.env.NEXT_PUBLIC_API_URL+"api/projects");
+    const { projects } = await getData(`${BASE_API_URL}/api/projects`);
     const project: IProject = projects.find( (p: IProject) => p.slug.toString() === slug );
     return project;
 }
@@ -33,5 +34,5 @@ export async function getProjectBySlug(slug: string){
 
 //Get Profile
 export async function getProfile(){
-  return getData(process.env.NEXT_PUBLIC_API_URL+"api/profile");
+  return getData(`${BASE_API_URL}/api/profile`);
 }

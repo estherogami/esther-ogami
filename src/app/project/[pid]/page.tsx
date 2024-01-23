@@ -10,7 +10,8 @@ export const metadata: Metadata = {
     title: 'Project',
   }
   
-export default async function ProjectPage ({ params }: any)  {
+
+export default async function ProjectPage ({ params }: { params: { pid: string }})  {
     const project  = await getProjectBySlug(params.pid);
    
     return (
