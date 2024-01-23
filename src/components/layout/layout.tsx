@@ -13,7 +13,7 @@ const Layout = (props: any) => {
             <NavInfo />  
             {props.children}
         </LangContextProvider> 
-      </main>
+      </main> 
   );
 };
 
