@@ -19,6 +19,7 @@ body {
   font-family: 'Zen Maru Gothic', sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  max-width: 100vw;
   }
 
 a {
@@ -32,6 +33,7 @@ a {
 
 .container{
   padding-left: 300px;
+  overflow-x: hidden;
   @media screen and (max-width: 821px){
     padding-left: 5vw;
   }
