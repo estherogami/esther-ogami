@@ -1,5 +1,5 @@
 import { IProject } from "../models/project/types";
-export const BASE_API_URL = process.env.NEXT_PUBLIC_VERCEL_URL;
+export const BASE_API_URL = process.env.API_URL;
 
 
 
