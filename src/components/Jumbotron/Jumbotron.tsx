@@ -1,4 +1,4 @@
-
+"use client"
 import Image from 'next/image';
 import LangContext from "../../store/langContext";
 import { useContext } from "react";

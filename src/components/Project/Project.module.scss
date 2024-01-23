@@ -32,7 +32,7 @@
         }
         &:before{
             content: "";
-            background: url(../../public/assets/img/character_menu.png) no-repeat;
+            background: url(../../../public/assets/img/character_menu.png) no-repeat;
             background-size: contain;
             width: 200px;
             height: 266px;
@@ -66,7 +66,7 @@
         h2{
             display: block;
             background-position: center bottom;
-            background: url(../../public/assets/img/dot_hor.svg) repeat-x;
+            background: url(../../../public/assets/img/dot_hor.svg) repeat-x;
             background-size: 182px 3px;
             background-position: bottom;
             margin: 0;

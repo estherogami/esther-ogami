@@ -1,3 +1,5 @@
+"use client"
+
 import { useContext } from "react";
 import LangContext from "../../store/langContext";
 import styles from "./LanguageSwitch.module.scss";

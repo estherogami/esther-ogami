@@ -1,4 +1,5 @@
-import { Fragment, useContext } from "react"
+"use client"
+import { useContext } from "react"
 import Image from 'next/image';
 
 import LangContext from "../../store/langContext";
@@ -16,12 +17,13 @@ interface IProjectProps {
 const Project = ({ data }: IProjectProps) => {
     const {category,  description, title, link, featured_picture } = data;
     const { language, langSelector } = useContext(LangContext);
+
     return (
-        <Fragment>
+        <>
             <div className={styles.ProjectContainer}>
                 <div className={styles.Project}>
                     <div>
-                    <div className={styles.ProjectInfo} >
+                     <div className={styles.ProjectInfo} >
                         <h1><Image 
                             src="/assets/img/titles/Project.svg"
                             height={150} 
@@ -32,12 +34,12 @@ const Project = ({ data }: IProjectProps) => {
                         <article>
                             <p>{category}</p>
                             {parse(langSelector(language, description))}
-                            {/*// @ts-ignore */}
+                            
                             {link !== "" ? <Button link={link}>Link to project</Button>: null}
                         </article>
                     </div>
                     </div>
-                    <div className={styles.Gallery}>
+                     <div className={styles.Gallery}>
                         <ul>
                         {featured_picture.map((image, i) => (
                             i> 0 ? <li key={i} >
@@ -48,10 +50,10 @@ const Project = ({ data }: IProjectProps) => {
                                 alt={image.alt} />
                             </li>: null))}
                         </ul>
-                    </div>
+                    </div> 
                 </div>
             </div>            
-        </Fragment>
+        </>
     );
 }
 

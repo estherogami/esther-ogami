@@ -31,7 +31,7 @@
     }
     &:before{
         content: "";
-        background: url(../../public/assets/img/character_menu.png) no-repeat;
+        background: url(../../../public/assets/img/character_menu.png) no-repeat;
         background-size: contain;
         width: 200px;
         height: 266px;
@@ -52,7 +52,7 @@
             list-style-type: none;
             a{
                 display: block;
-                background: url(../../public/assets/img/dot_hor.svg) repeat-x;
+                background: url(../../../public/assets/img/dot_hor.svg) repeat-x;
                 background-position: center top;
                 background-size: 134px 2px;
                 font-weight: 800;

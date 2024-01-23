@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image';
 import { IProfile } from '../../models/profile/types';
 import LangContext from "../../store/langContext";
@@ -43,7 +44,7 @@ const About = ({data}: IProfileProps) => {
                         <div className={styles.resume}>
                         <h4>RESUME</h4>
                         { /* @ts-ignore */ }
-                        <Resume resumeData={data[0].work_experience} />
+                        <Resume resumeData={data[0].work_experience} /> 
                         </div>
                     </div>
                     <Skills />

@@ -1,17 +1,17 @@
 import Image from 'next/image';
-
+import { getAllProjects } from '@/lib/api-utils';
 import WorksListItem from './WorksListItem';
+
 import { IProject } from "../../models/project/types";
 
 import styles from "./Works.module.scss";
 
-interface IWorksListProps {
-    data: IProject[];
-  }
+  
 
-const Works = ({ data }: IWorksListProps) => {
+export default async function Works ()  {
+    const { projects } = await getAllProjects() as { projects: IProject[] };
+  
     return (
-        
         <section id="works" className={styles.Works}>
             <div className="container">
                 <h2>
@@ -24,12 +24,10 @@ const Works = ({ data }: IWorksListProps) => {
                      />
                 </h2>
 
-                <ul className={styles.WorksList}>
-                    { data.map( (project, index) => <WorksListItem key={project._id} data={project} />)} 
-                </ul>
+                  <ul className={styles.WorksList}>
+                    { projects.map( (project, index) => <WorksListItem key={project._id} data={project} />)} 
+                </ul>  
             </div>
         </section>
     );
 }
-
-export default Works;

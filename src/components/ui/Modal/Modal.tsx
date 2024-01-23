@@ -1,4 +1,5 @@
-import { useRouter } from "next/router";
+"use client"
+import { useRouter } from 'next/navigation';
 import Cross from "../Cross/Cross";
 import styles from "./Modal.module.scss";
 

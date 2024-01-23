@@ -1,3 +1,4 @@
+"use client"
 import { createContext, useState, ReactNode, useEffect } from 'react';
 import { ISubLanguage } from '../models/common_types';
 
@@ -23,14 +24,12 @@ const LangContext = createContext<Langs>({
 });
 
 export function LangContextProvider(props: LangContextProviderProps) {
- 
-
   const [language, setLanguage] = useState<typeLan>("EN");
   useEffect(() => {
     if (typeof window !== 'undefined' && window.localStorage) {
         const defaultLang= localStorage.getItem('language');
-        /* @ts-ignore */ 
-        setLanguage(defaultLang) ;
+        /* @ts-ignore */
+        defaultLang ? setLanguage(defaultLang) : setLanguage("EN");
     }
   }, []);
 
