@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { getAllProjects } from '@/lib/api-utils';
+import { getAllProjects, BASE_API_URL } from '@/lib/api-utils';
 import WorksListItem from './WorksListItem';
 
 import { IProject } from "../../models/project/types";
@@ -9,6 +9,9 @@ import styles from "./Works.module.scss";
   
 
 export default async function Works ()  {
+    if (!BASE_API_URL) { 
+        return null
+    }
     const { projects } = await getAllProjects() as { projects: IProject[] };
   
     return (

@@ -1,6 +1,6 @@
 
 import { Metadata } from 'next'
-import {  getProjectBySlug } from "../../../lib/api-utils";
+import {  BASE_API_URL, getProjectBySlug } from "../../../lib/api-utils";
 import { useParams } from 'next/navigation';
 
 import Project from "../../../components/Project/Project";
@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   
 
 export default async function ProjectPage ({ params }: { params: { pid: string }})  {
+    if (!BASE_API_URL) { 
+        return null
+    }
     const project  = await getProjectBySlug(params.pid);
    
     return (
