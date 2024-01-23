@@ -15,7 +15,7 @@ interface IProjectProps {
   }
 
 const Project = ({ data }: IProjectProps) => {
-    const {category,  description, title, link, featured_picture } = data;
+    const {category,  description, title, featured_picture } = data;
     const { language, langSelector } = useContext(LangContext);
 
     return (
@@ -35,7 +35,7 @@ const Project = ({ data }: IProjectProps) => {
                             <p>{category}</p>
                             {parse(langSelector(language, description))}
                             
-                            {link !== "" ? <Button link={link}>Link to project</Button>: null}
+                            {data.link !== "" ? <Button link={data.link as string}>Link to project</Button>: null}
                         </article>
                     </div>
                     </div>
