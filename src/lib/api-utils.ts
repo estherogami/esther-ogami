@@ -6,10 +6,8 @@ export const BASE_API_URL = process.env.NEXT_PUBLIC_VERCEL_URL;
 async function getData(request: string){
     try {
       const res = await fetch(request, {
-        cache: "no-store",
-        next: {
-          revalidate: 0
-        }
+        cache: "no-store"
+    
       });
   
       if (!res.ok) {
