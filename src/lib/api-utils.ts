@@ -1,8 +1,7 @@
 import { IProject } from "../models/project/types";
-export let BASE_API_URL = process.env.NEXT_PUBLIC_VERCEL_URL;
-if(process.env.NEXT_PUBLIC_VERCEL_URL == null){
-  BASE_API_URL="https://"+BASE_API_URL;
-}
+export const BASE_API_URL = process.env.NEXT_PUBLIC_VERCEL_URL;
+
+
 
 //Default data fetch response function
 async function getData(request: string){
