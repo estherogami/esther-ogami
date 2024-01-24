@@ -1,9 +1,11 @@
 import "@/styles/globals.scss";
 import type { Metadata } from "next";
-import { Zen_Maru_Gothic, Inter } from "next/font/google";
+import { Zen_Maru_Gothic } from "next/font/google";
 import Layout from "@/components/layout/layout";
-const ZenMaru = Zen_Maru_Gothic({
+const ZenMaruGothic = Zen_Maru_Gothic({
   weight: ['400', '500', '700'],
+  style: ['normal'],
+  subsets: ['latin'],
   display: 'swap',
 })
 
@@ -22,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
     
-      <body className={ZenMaru.className}>
+      <body className={ZenMaruGothic.className}>
         <Layout>{children}</Layout>
       </body>
     </html>
