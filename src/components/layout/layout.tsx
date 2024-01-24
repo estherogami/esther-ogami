@@ -3,15 +3,15 @@ import { LangContextProvider } from '@/store/langContext';
 import MainNavigation from "./MainNavigation";
 
 
-
 const Layout = (props: any) => {
 
   return (
+    
       <main>
        <LangContextProvider>
-            {props.children}
             <MainNavigation />
             <NavInfo />  
+            {props.children}
         </LangContextProvider> 
       </main> 
   );
