@@ -1,8 +1,11 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "@/styles/globals.scss";
+import type { Metadata } from "next";
+import { Zen_Maru_Gothic, Inter } from "next/font/google";
 import Layout from "@/components/layout/layout";
-const inter = Inter({ subsets: ["latin"] });
+const ZenMaru = Zen_Maru_Gothic({
+  weight: ['400', '500', '700'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: {
@@ -18,7 +21,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+    
+      <body className={ZenMaru.className}>
         <Layout>{children}</Layout>
       </body>
     </html>

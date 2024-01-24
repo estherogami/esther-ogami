@@ -1,4 +1,3 @@
-import { Metadata } from 'next'
 import MainNavigation from "./MainNavigation";
 import NavInfo from "./NavInfo";
 import { LangContextProvider } from '@/store/langContext';
