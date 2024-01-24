@@ -9,18 +9,17 @@
     @media screen and (max-width: 821px){  
         padding-right: 3rem;
         h2 img{
-            height: 40px;
+            height: 23px;
+            width: auto;
         }
     }
     
 }
 .Subtitle{
-    font-family: $font-family;
     font-size: 46px;
     font-weight: 800;
 }
 .Text{
-    font-family: $font-family;
     font-size: 30px;
     font-weight: 500;
     max-width: 700px;  
@@ -29,7 +28,6 @@
 
 .Thanks{
     font-size: 3.5vw;
-    font-family: $font-family;
     text-align: right;
     font-weight: 600;
     margin-top: 10vw;

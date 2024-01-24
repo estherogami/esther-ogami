@@ -20,8 +20,9 @@ export default async function Works ()  {
                 <h2>
                 <Image 
                     src="/assets/img/titles/Work.png"
-                    height={150} 
-                    width={500} 
+                     height={150} 
+                     width={500} 
+                    
                     alt="Works" 
                     loading="lazy"
                      />

@@ -50,16 +50,18 @@
         }
         h1{
             position: absolute;
-            margin-top: -150px;
+            margin-top: -90px;
             margin-left: -35px;
             img{
-                width: 20vw;
+                width: 270px;
+                height: auto;
             }
             @media screen and (max-width: 821px){
                 margin-left: 0;
-                margin-top: -125px;
+                margin-top: -75px;
                 img{
-                    width: 60vw;
+                    height: 37px;
+                    width: auto;
                 }
             }
         }

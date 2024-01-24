@@ -13,8 +13,13 @@
      }
 }
 
-@media screen and (max-width: 821px){
-        .Works h2 img{
-            width: 50vw;
+.Works h2{
+    @media screen and (max-width: 821px){
+        img{
+            width: auto;
+            height: 50px;
         }
 }
+
+}
+

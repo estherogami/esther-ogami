@@ -1,6 +1,5 @@
 "use client"
-import { useContext, Suspense } from "react"
-import { ImSpinner } from "react-icons/im";
+import { useContext } from "react"
 import Image from 'next/image';
 
 import LangContext from "../../store/langContext";
@@ -45,14 +44,14 @@ const Project = ({ data }: IProjectProps) => {
                        
                         {featured_picture.map((image, i) => (
                             i> 0 ? <li key={i} >
-                                <Suspense fallback={<ImSpinner />}>
+                                
                                     <Image 
                                     src={"/assets/img/projects"+image.src}
                                     width={image.width}
                                     height={image.height}
                                     alt={image.alt} 
                                     loading="lazy" />
-                                </Suspense>
+                               
                             </li>: null))}
                         </ul>
                     </div> 
