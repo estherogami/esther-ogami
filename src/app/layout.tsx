@@ -1,4 +1,5 @@
 import "@/styles/globals.scss";
+import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from "next";
 import Layout from "@/components/layout/layout";
 
@@ -44,7 +45,7 @@ export default function RootLayout({
     <html lang="en">
     
       <body className={ZenMaruGothic.className}>
-        
+        <Analytics />
         <Layout>
           {children}
         </Layout>
