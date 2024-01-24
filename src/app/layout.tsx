@@ -11,21 +11,21 @@ const ZenMaruGothic = Zen_Maru_Gothic({
   display: 'swap',
 })
 
-import localFont from 'next/font/local'
-const   abcountryroadregular = localFont({
-  src: [
-    {
-      path: '../../public/assets/fonts/abcountryroadregular.woff2',
-      weight: 'normal',
-      style: 'normal',
-    },
-    {
-      path: '../../public/assets/fonts/abcountryroadregular.woff',
-      weight: 'normal',
-      style: 'italic',
-    }
-  ],
-})
+// import localFont from 'next/font/local'
+// const   abcountryroadregular = localFont({
+//   src: [
+//     {
+//       path: '../../public/assets/fonts/abcountryroadregular.woff2',
+//       weight: 'normal',
+//       style: 'normal',
+//     },
+//     {
+//       path: '../../public/assets/fonts/abcountryroadregular.woff',
+//       weight: 'normal',
+//       style: 'italic',
+//     }
+//   ],
+// })
 
 
 export const metadata: Metadata = {
@@ -43,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
     
-      <body className={`${ZenMaruGothic.className} ${abcountryroadregular.className}`}>
+      <body className={ZenMaruGothic.className}>
         
         <Layout>
           {children}
