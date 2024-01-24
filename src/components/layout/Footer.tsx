@@ -42,7 +42,7 @@ const Footer = () => {
                     <div className={styles.ContactInfo}>
                         <span className={styles.Subtitle}>Whats next?</span>
                         <h2><Image 
-                                    src="/assets/img/titles/Contact.svg"
+                                    src="/assets/img/titles/Contact.png"
                                     height={100} 
                                     width={900} 
                                     alt="Works" 

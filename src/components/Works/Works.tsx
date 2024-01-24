@@ -19,7 +19,7 @@ export default async function Works ()  {
             <div className="container">
                 <h2>
                 <Image 
-                    src="/assets/img/titles/Work.svg"
+                    src="/assets/img/titles/Work.png"
                     height={150} 
                     width={500} 
                     alt="Works" 

@@ -23,7 +23,7 @@ const Skills = () => {
     return (
         <div id="service">
             <h3><Image 
-                    src="/assets/img/titles/Skills.svg"
+                    src="/assets/img/titles/Skills.png"
                     height={70} 
                     width={300} 
                     alt="Skills" 

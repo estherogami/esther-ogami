@@ -18,7 +18,7 @@ const Jumbotron = () => {
         <section id="top" className={styles.Jumbotron}>
             <div className="container">
                 <Image 
-                src="/assets/img/titles/Hello.svg"
+                src="/assets/img/titles/Hello.png"
                 height={150} 
                 width={500} 
                 alt="Hello!" 

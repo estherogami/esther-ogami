@@ -26,7 +26,7 @@ const Project = ({ data }: IProjectProps) => {
                     <div>
                      <div className={styles.ProjectInfo} >
                         <h1><Image 
-                            src="/assets/img/titles/Project.svg"
+                            src="/assets/img/titles/Project.png"
                             height={150} 
                             width={500} 
                             alt="Project" 

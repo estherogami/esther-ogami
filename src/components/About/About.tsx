@@ -30,7 +30,7 @@ const About = ({data}: IProfileProps) => {
             <div className={styles.SectionWrap}>
                 <div className={styles.container}>
                     <h2 className={`${"DefaultState"} ${isVisible ? "FadeIn" : ''}`} ref={ref}><Image 
-                        src="/assets/img/titles/About.svg"
+                        src="/assets/img/titles/About.png"
                         height={150} 
                         width={500} 
                         alt="About" 
