@@ -1,10 +1,10 @@
-import { IProfile } from '../models/profile/types';
+import { IProfile } from '../../models/profile/types';
 import { getProfile, BASE_API_URL } from '@/lib/api-utils';
 
-import Jumbotron from "../components/Jumbotron/Jumbotron";
-import Works from '../components/Works/Works';
-import About from '../components/About/About';
-import Footer from '../components/layout/Footer';
+import Jumbotron from "../../components/Jumbotron/Jumbotron";
+import Works from '../../components/Works/Works';
+import About from '../../components/About/About';
+import Footer from '../../components/layout/Footer';
 
 
 
