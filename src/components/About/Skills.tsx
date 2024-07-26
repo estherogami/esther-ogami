@@ -37,10 +37,10 @@ const Skills = () => {
                             <ul>
                                 <li><span><DiHtml5 /></span> <strong>HTML5</strong></li>
                                 <li><span><DiCss3 /></span> <strong>CSS3</strong> (SASS, Tailwind, Bootstrap)</li>
-                                <li><span><DiJavascript1 /></span> <strong>Javascript ES6+</strong> (React, Next.js, Typescript, Node.js, JQuery)</li>
+                                <li><span><DiJavascript1 /></span> <strong>Javascript</strong> (React, Next.js, Typescript, Prisma, JQuery)</li>
                                 <li><span><DiPhp /></span> <strong>PHP</strong></li>
                                 <li><span><DiWordpress /></span> <strong>CMS</strong> (Wordpress, Woocommerce, Shopify)</li>
-                                <li><span><DiMongodb /></span> <strong>Databases</strong> (SQL, MongoDB)</li>
+                                <li><span><DiMongodb /></span> <strong>Databases</strong> (SQL, MongoDB, PostgreSQL)</li>
                                 <li><span><DiGit /></span> <strong>Git</strong></li>
                             </ul>
                         </div>
