@@ -3,7 +3,7 @@ import {ISubLanguage} from "../common_types";
 export type category = "web" | "design";
 
 export interface IProject{
-    _id: string;
+    _id?: string;
     title: ISubLanguage;
     slug: string;
     customer?: string;
@@ -16,7 +16,7 @@ export interface IProject{
   }
 
 export interface IPicture{
-  _id: string;
+  _id?: string;
   src: string;
   width: number;
   height: number;
