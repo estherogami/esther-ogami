@@ -24,7 +24,7 @@ export default async function NewProject() {
           -alt
         description en/jp
         link
-        <NewProjectForm />
+        <NewProjectForm method={"POST"}/>
       </>
     )
   }

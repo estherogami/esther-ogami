@@ -30,3 +30,5 @@ export async function POST(req: Request): Promise<NextResponse> {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }
+
+//Handler para editar un proyecto

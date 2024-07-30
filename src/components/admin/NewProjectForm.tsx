@@ -3,7 +3,11 @@ import { useForm } from "react-hook-form";
 import { IProject } from "@/models/project/types";
 import { useRouter } from "next/navigation";
 
-const NewProjectForm = () => {
+interface NewProjectFormProps {
+  method: 'PUT' | 'POST';
+}
+
+const NewProjectForm =  ({ method }: NewProjectFormProps) => {
   const router = useRouter();
   const {
     register,

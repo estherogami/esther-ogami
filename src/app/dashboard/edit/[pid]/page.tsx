@@ -1,23 +1,14 @@
+import NewProjectForm from "@/components/admin/NewProjectForm";
 import Link from "next/link";
 
 
-export default async function EditProject() {
-  //get project by pid
+export default async function EditProject({ params }: { params: { pid: string }}) {
+    console.log(params.pid);
     return (
       <>
         <Link href="/admin">Volver</Link>
-        
-        project slug
-        project title en/jp
-        customer
-        category (select)
-        featured image (loop)
-          -src
-          -width
-          -height
-          -alt
-        description en/jp
-        link
+        <button>Borrar proyecto</button>
+        <NewProjectForm method={"PUT"} />
       </>
     )
   }
