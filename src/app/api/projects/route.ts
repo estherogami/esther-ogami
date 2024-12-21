@@ -31,4 +31,15 @@ export async function POST(req: Request): Promise<NextResponse> {
   }
 }
 
-//Handler para editar un proyecto
+// Handler para borrar un proyecto
+export async function DELETE(req: Request): Promise<NextResponse> {
+  await connectMongoDB();
+  try {
+    const { id } = await req.json(); // Suponiendo que el ID del proyecto a borrar se pasa en el cuerpo de la solicitud
+    await Projects.findByIdAndDelete(id);
+    return NextResponse.json({ message: "Project deleted successfully" });
+  } catch (error) {
+    console.error('Error deleting project:', error);
+    return NextResponse.json({ error: error.message }, { status: 500 });
+  }
+}

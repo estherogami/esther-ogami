@@ -6,6 +6,9 @@
     height: 2200px;
     flex-wrap: wrap;
     @media screen and (max-width: 1181px){
+        height: 2540px;
+     } 
+     @media screen and (max-width: 1024px){
         height: 2300px;
      } 
      @media screen and (max-width: 821px){

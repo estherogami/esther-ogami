@@ -13,6 +13,7 @@ export async function GET(): Promise<NextResponse<ProfileResponse>> {
   await connectMongoDB();
   const profile: IProfile[] = await Profile.find();
   const responseData: ProfileResponse = { profile };
+  console.log(responseData)
   return NextResponse.json(responseData);
 }
 

@@ -10,10 +10,11 @@
   transform: translateY(20px); 
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
    @media screen and (max-width: 1181px){
-      width: 36vw;
+      width: 34vw;
+      padding-right: 3.5rem;
    } 
    @media screen and (max-width: 821px){
-      width: 100%;
+      width: 90%;
       margin-bottom: 1rem;
    }
    a{
