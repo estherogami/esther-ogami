@@ -7,7 +7,7 @@ export const BASE_API_URL = process.env.API_URL;
 async function getData(request: string){
     try {
       const res = await fetch(request, {
-        cache: "no-store"
+        next: { revalidate: 60 } 
     
       });
   
